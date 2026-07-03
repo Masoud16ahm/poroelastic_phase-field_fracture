@@ -120,6 +120,9 @@ Small numerical differences may still occur because of differences in finite ele
 ## Author
 
 Masoud Ahmadi
+
 Department of Mathematics
+
 University College London
+
 2026
