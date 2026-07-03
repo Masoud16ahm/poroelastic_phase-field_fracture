@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated paper."
+title: "Poroelastic phase-field model for fluid-driven fracture"
+authors:
+  - family-names: Ahmadi
+    given-names: Masoud
+    affiliation: "University College London"
+year: 2026
+license: MIT
+preferred-citation:
+  type: article
+  title: "A finite element poroelastic phase-field formulation for fluid-driven fracture"
+  authors:
+    - family-names: Ahmadi
+      given-names: Masoud
+    - family-names: Lamprakis
+      given-names: Alkaios
+    - family-names: Ovenden
+      given-names: Nicholas
+  year: 2026
+  journal: "TO BE ADDED"
+  doi: "TO BE ADDED"
