@@ -96,6 +96,13 @@ and writes the centre-pressure history to:
 p_c.txt
 ```
 
+## Tested versions
+
+- Firedrake installation reporting package metadata version `0.14.dev0`
+- FEniCS/DOLFIN 2019.1.0
+- Python 3.13 for the Firedrake implementation
+- Python 3.11 for the FEniCS/DOLFIN Docker environment
+
 ## Dependencies
 
 The Firedrake code requires a working Firedrake installation.
