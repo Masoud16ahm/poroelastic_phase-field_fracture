@@ -9,7 +9,7 @@ year: 2026
 license: MIT
 preferred-citation:
   type: article
-  title: "A finite element poroelastic phase-field formulation for fluid-driven fracture"
+  title: "A finite element baseline model for Darcy--Biot phase-field fracture in saturated porous media"
   authors:
     - family-names: Ahmadi
       given-names: Masoud

@@ -259,15 +259,14 @@ if live_plot:
 # Time-stepping loop
 for i in range(n_steps):
 
-    # Solve the system of equations
-    up_solver.solve()
-    phi_solver.solve() 
+    # Two staggered passes; keep previous-time fields fixed.
+    for _ in range(2):
+        up_solver.solve()
+        phi_solver.solve()
 
-    # Prevent healing
-    phi.interpolate(max_value(phi_old, phi))
-
-    # Boundedness
-    phi.interpolate(min_value(max_value(phi, 0.0), 1.0))
+        # Prevent healing and enforce boundedness after each pass
+        phi.interpolate(max_value(phi_old, phi))
+        phi.interpolate(min_value(max_value(phi, 0.0), 1.0))
     
     # Update the old solutions
     z_old.assign(z)

@@ -50,6 +50,8 @@ Total reported DOFs: 404410
 
 ## Numerical note
 
+Two staggered displacement--pressure/phase-field passes are performed per time step. The previous-time fields are updated only after the second pass.
+
 The Gaussian source is narrow compared with the domain size. In the FEniCS/DOLFIN implementation, an explicit quadrature degree of 10 is used for domain integrals. This improves integration of the regularised source and gives pressure and fracture responses consistent with the Firedrake implementation.
 
 ## Running the Firedrake code
@@ -95,13 +97,6 @@ and writes the centre-pressure history to:
 ```text
 p_c.txt
 ```
-
-## Tested versions
-
-- Firedrake installation reporting package metadata version `0.14.dev0`
-- FEniCS/DOLFIN 2019.1.0
-- Python 3.13 for the Firedrake implementation
-- Python 3.11 for the FEniCS/DOLFIN Docker environment
 
 ## Dependencies
 
